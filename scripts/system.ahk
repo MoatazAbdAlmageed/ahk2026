@@ -14,17 +14,6 @@
     Send "{Enter}"
 }
 
-:*:syscls::
-{
-    SendText "cls"
-    Send "{Enter}"
-}
-
-:*:sysmd::
-{
-    SendText "mkdir "
-}
-
 :*:sysrd::
 {
     SendText "rmdir /s /q "

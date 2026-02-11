@@ -3,70 +3,70 @@
 ; ===============================
 
 ; Basic commands - auto-execute
-:*:dockps::
+:*:dkps::
 {
     SendText "docker ps"
     Send "{Enter}"
 }
 
-:*:dockpsa::
+:*:dkpsa::
 {
     SendText "docker ps -a"
     Send "{Enter}"
 }
 
-:*:docki::
+:*:dki::
 {
     SendText "docker images"
     Send "{Enter}"
 }
 
-:*:dockup::
+:*:dkup::
 {
     SendText "docker-compose up -d"
     Send "{Enter}"
 }
 
-:*:dockdown::
+:*:dkdown::
 {
     SendText "docker-compose down"
     Send "{Enter}"
 }
 
-:*:dockstop::
+:*:dkstop::
 {
     SendText "docker stop $(docker ps -q)"
     Send "{Enter}"
 }
 
 ; Commands that need arguments - cursor stays at end
-:*:dockb::
+:*:dkb::
 {
     SendText "docker build -t "
 }
 
-:*:dockrun::
+:*:dkrun::
 {
     SendText "docker run "
 }
 
-:*:dockex::
+:*:dkex::
 {
     SendText "docker exec -it "
 }
 
-:*:dockl::
+:*:dkl::
 {
     SendText "docker logs -f "
 }
 
-:*:dockv::
+:*:dkv::
 {
     SendText "docker volume ls"
     Send "{Enter}"
 }
 
-:*:dockn::
+:*:dkn::
 {
     SendText "docker network ls"
     Send "{Enter}"

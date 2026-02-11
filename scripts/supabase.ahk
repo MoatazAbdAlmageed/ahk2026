@@ -1,5 +1,5 @@
 ; ===============================
-; Supabase CLI Shortcuts
+; Supabase CLI Shortcuts https://supabase.com/
 ; ===============================
 
 :*:supas::

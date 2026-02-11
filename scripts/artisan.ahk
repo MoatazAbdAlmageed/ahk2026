@@ -69,6 +69,48 @@
     Send "{Enter}"
 }
 
+:*:artkg::
+{
+    SendText "php artisan key:generate"
+    Send "{Enter}"
+}
+
+:*:artsl::
+{
+    SendText "php artisan storage:link"
+    Send "{Enter}"
+}
+
+:*:artqw::
+{
+    SendText "php artisan queue:work"
+    Send "{Enter}"
+}
+
+:*:artql::
+{
+    SendText "php artisan queue:listen"
+    Send "{Enter}"
+}
+
+:*:artccl::
+{
+    SendText "php artisan cache:clear"
+    Send "{Enter}"
+}
+
+:*:artabout::
+{
+    SendText "php artisan about"
+    Send "{Enter}"
+}
+
+:*:artmrb::
+{
+    SendText "php artisan migrate:rollback"
+    Send "{Enter}"
+}
+
 :*:artmm::
 {
     SendText "php artisan make:model "
@@ -127,6 +169,51 @@
 :*:artmenum::
 {
     SendText "php artisan make:enum "
+}
+
+:*:artmresource::
+{
+    SendText "php artisan make:resource "
+}
+
+:*:artmjob::
+{
+    SendText "php artisan make:job "
+}
+
+:*:artmevent::
+{
+    SendText "php artisan make:event "
+}
+
+:*:artmlistener::
+{
+    SendText "php artisan make:listener "
+}
+
+:*:artmprovider::
+{
+    SendText "php artisan make:provider "
+}
+
+:*:artmtest::
+{
+    SendText "php artisan make:test "
+}
+
+:*:artmobs::
+{
+    SendText "php artisan make:observer "
+}
+
+:*:artmcast::
+{
+    SendText "php artisan make:cast "
+}
+
+:*:artmcomp::
+{
+    SendText "php artisan make:component "
 }
 
 ; ; Commands that need arguments - cursor stays at end
