@@ -2,50 +2,123 @@
 ; Linux/Bash Style Shortcuts (Useful for WSL/Git Bash)
 ; ===============================
 
-:*:bashlla::
+:*:shlla::
 {
     SendText "ls -la"
     Send "{Enter}"
 }
 
-:*:bashgrep::
+:*:shgrep::
 {
     SendText "grep -r "
 }
 
-:*:bashfind::
+:*:shfind::
 {
     SendText "find . -name "
 }
 
-:*:bashchmod::
+:*:shchmod::
 {
     SendText "chmod +x "
 }
 
-:*:bashchown::
+:*:shchown::
 {
     SendText "chown -R "
 }
 
-:*:bashdf::
+:*:shdf::
 {
     SendText "df -h"
     Send "{Enter}"
 }
 
-:*:bashtop::
+:*:shtop::
 {
     SendText "top"
     Send "{Enter}"
 }
 
-:*:bashssh::
-{
-    SendText "ssh "
-}
+; :*:shssh::
+; {
+;     SendText "ssh "
+; }
 
-:*:bashscp::
+:*:shscp::
 {
     SendText "scp "
+}
+
+; --- APT / Package Management ---
+:*:apti::
+{
+    SendText "sudo apt install "
+}
+
+:*:aptu::
+{
+    SendText "sudo apt update"
+    Send "{Enter}"
+}
+
+:*:aptg::
+{
+    SendText "sudo apt upgrade"
+    Send "{Enter}"
+}
+
+:*:aptuu::
+{
+    SendText "sudo apt update && sudo apt upgrade -y"
+    Send "{Enter}"
+}
+
+:*:aptr::
+{
+    SendText "sudo apt remove "
+}
+
+:*:aptp::
+{
+    SendText "sudo apt purge "
+}
+
+:*:apts::
+{
+    SendText "apt search "
+}
+
+:*:aptsh::
+{
+    SendText "apt show "
+}
+
+:*:aptar::
+{
+    SendText "sudo apt autoremove"
+    Send "{Enter}"
+}
+
+:*:aptac::
+{
+    SendText "sudo apt autoclean"
+    Send "{Enter}"
+}
+
+:*:aptadd::
+{
+    SendText "sudo add-apt-repository "
+}
+
+; --- Other Package Tools ---
+:*:snaphi::
+{
+    SendText "sudo snap install "
+}
+
+:*:snapls::
+{
+    SendText "snap list"
+    Send "{Enter}"
 }
