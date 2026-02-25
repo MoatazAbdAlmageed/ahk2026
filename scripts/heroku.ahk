@@ -2,43 +2,16 @@
 ; Heroku CLI Shortcuts
 ; ===============================
 
-:*:herlogin::
-{
-    SendText "heroku login"
-    Send "{Enter}"
-}
+::herlogin::heroku login
 
-:*:herapps::
-{
-    SendText "heroku apps"
-    Send "{Enter}"
-}
+::herapps::heroku apps
 
-:*:heropen::
-{
-    SendText "heroku open"
-    Send "{Enter}"
-}
+::heropen::heroku open
 
-:*:herlogs::
-{
-    SendText "heroku logs --tail"
-    Send "{Enter}"
-}
+::herlogs::heroku logs --tail
 
-:*:herconf::
-{
-    SendText "heroku config"
-    Send "{Enter}"
-}
+::herconf::heroku config
 
-:*:herps::
-{
-    SendText "heroku ps"
-    Send "{Enter}"
-}
+::herps::heroku ps
 
-:*:herrun::
-{
-    SendText "heroku run "
-}
+::herrun::heroku run 

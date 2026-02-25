@@ -2,42 +2,16 @@
 ; Go (Golang) Command Shortcuts
 ; ===============================
 
-:*:gor::
-{
-    SendText "go run ."
-    Send "{Enter}"
-}
+::/gor::go run .
 
-:*:gob::
-{
-    SendText "go build"
-    Send "{Enter}"
-}
+::/gob::go build
 
-:*:got::
-{
-    SendText "go test ./..."
-    Send "{Enter}"
-}
+::/got::go test ./...
 
-:*:gomod::
-{
-    SendText "go mod tidy"
-    Send "{Enter}"
-}
+::/gomod::go mod tidy
 
-:*:goi::
-{
-    SendText "go install "
-}
+::/goi::go install 
 
-:*:goet::
-{
-    SendText "go get "
-}
+::/goet::go get 
 
-:*:gofmt::
-{
-    SendText "go fmt ./..."
-    Send "{Enter}"
-}
+::/gofmt::go fmt ./...

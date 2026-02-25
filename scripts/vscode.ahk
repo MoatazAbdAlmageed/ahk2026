@@ -2,28 +2,12 @@
 ; VS Code / Editor Shortcuts
 ; ===============================
 
-:*:vsc::
-{
-    SendText "code ."
-    Send "{Enter}"
-}
+::vsc::code .
 
-:*:vscn::
-{
-    SendText "code -n "
-}
+::vscn::code -n 
 
-:*:vscr::
-{
-    SendText "code -r "
-}
+::vscr::code -r 
 
-:*:vscg::
-{
-    SendText "code -g "
-}
+::vscg::code -g 
 
-:*:vscext::
-{
-    SendText "code --install-extension "
-}
+::vscext::code --install-extension 

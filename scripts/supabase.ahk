@@ -2,41 +2,16 @@
 ; Supabase CLI Shortcuts https://supabase.com/
 ; ===============================
 
-:*:supas::
-{
-    SendText "supabase start"
-    Send "{Enter}"
-}
+::supas::supabase start
 
-:*:supai::
-{
-    SendText "supabase init"
-    Send "{Enter}"
-}
+::supai::supabase init
 
-:*:supad::
-{
-    SendText "supabase db "
-}
+::supad::supabase db 
 
-:*:supam::
-{
-    SendText "supabase migration "
-}
+::supam::supabase migration 
 
-:*:supal::
-{
-    SendText "supabase login"
-    Send "{Enter}"
-}
+::supal::supabase login
 
-:*:supalink::
-{
-    SendText "supabase link --project-ref "
-}
+::supalink::supabase link --project-ref 
 
-:*:supagen::
-{
-    SendText "supabase gen types typescript --local"
-    Send "{Enter}"
-}
+::supagen::supabase gen types typescript --local

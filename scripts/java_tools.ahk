@@ -3,45 +3,17 @@
 ; ===============================
 
 ; Maven
-:*:mvni::
-{
-    SendText "mvn clean install"
-    Send "{Enter}"
-}
+::mvni::mvn clean install
 
-:*:mvnp::
-{
-    SendText "mvn clean package"
-    Send "{Enter}"
-}
+::mvnp::mvn clean package
 
-:*:mvnt::
-{
-    SendText "mvn test"
-    Send "{Enter}"
-}
+::mvnt::mvn test
 
-:*:mvns::
-{
-    SendText "mvn spring-boot:run"
-    Send "{Enter}"
-}
+::mvns::mvn spring-boot:run
 
 ; Gradle
-:*:gradleb::
-{
-    SendText "./gradlew build"
-    Send "{Enter}"
-}
+::gradleb::./gradlew build
 
-:*:gradler::
-{
-    SendText "./gradlew run"
-    Send "{Enter}"
-}
+::gradler::./gradlew run
 
-:*:gradlec::
-{
-    SendText "./gradlew clean"
-    Send "{Enter}"
-}
+::gradlec::./gradlew clean

@@ -3,610 +3,250 @@
 ; ===============================
 
 ; Basic commands - auto-execute
-:*:arts::
-{
-    SendText "php artisan serve"
-    Send "{Enter}"
-}
+::arts::php artisan serve
+::erdg::$env:PATH += ';C:\Program Files\Graphviz\bin'; php artisan generate:erd graph.svg --format=svg
 
-:*:artm::
-{
-    SendText "php artisan migrate"
-    Send "{Enter}"
-}
+::artm::php artisan migrate
 
-:*:artmf::
-{
-    SendText "php artisan migrate:fresh"
-    Send "{Enter}"
-}
+::artmf::php artisan migrate:fresh
 
-:*:artmfs::
-{
-    SendText "php artisan migrate:fresh --seed"
-    Send "{Enter}"
-}
+::artmfs::php artisan migrate:fresh --seed
 
-:*:artoc::
-{
-    SendText "php artisan optimize:clear"
-    Send "{Enter}"
-}
+::artoc::php artisan optimize:clear
 
-:*:artcc::
-{
-    SendText "php artisan config:cache"
-    Send "{Enter}"
-}
+::artcc::php artisan config:cache
 
-:*:artrc::
-{
-    SendText "php artisan route:cache"
-    Send "{Enter}"
-}
+::artrc::php artisan route:cache
 
-:*:artrl::
-{
-    SendText "php artisan route:list"
-    Send "{Enter}"
-}
+::artrl::php artisan route:list
 
-:*:artnc::
-{
-    SendText "php artisan view:cache"
-    Send "{Enter}"
-}
+::artnc::php artisan view:cache
 
-:*:artt::
-{
-    SendText "php artisan tinker"
-    Send "{Enter}"
-}
+::arttin::php artisan tinker
 
-:*:artdb::
-{
-    SendText "php artisan db:seed"
-    Send "{Enter}"
-}
+::artdb::php artisan db:seed
 
-:*:artkg::
-{
-    SendText "php artisan key:generate"
-    Send "{Enter}"
-}
+::artkg::php artisan key:generate
 
-:*:artsl::
-{
-    SendText "php artisan storage:link"
-    Send "{Enter}"
-}
+::artsl::php artisan storage:link
 
-:*:artqw::
-{
-    SendText "php artisan queue:work"
-    Send "{Enter}"
-}
+::artqw::php artisan queue:work
 
-:*:artql::
-{
-    SendText "php artisan queue:listen"
-    Send "{Enter}"
-}
+::artql::php artisan queue:listen
 
-:*:artccl::
-{
-    SendText "php artisan cache:clear"
-    Send "{Enter}"
-}
+::artccl::php artisan cache:clear
 
-:*:artabout::
-{
-    SendText "php artisan about"
-    Send "{Enter}"
-}
+::artabout::php artisan about
 
-:*:artmrb::
-{
-    SendText "php artisan migrate:rollback"
-    Send "{Enter}"
-}
+::artmrb::php artisan migrate:rollback
 
-:*:artmrs::
-{
-    SendText "php artisan migrate:reset"
-    Send "{Enter}"
-}
+::artmrs::php artisan migrate:reset
 
-:*:artmref::
-{
-    SendText "php artisan migrate:refresh"
-    Send "{Enter}"
-}
+::artmref::php artisan migrate:refresh
 
-:*:artms::
-{
-    SendText "php artisan migrate:status"
-    Send "{Enter}"
-}
+::artms::php artisan migrate:status
 
-:*:artopt::
-{
-    SendText "php artisan optimize"
-    Send "{Enter}"
-}
+::artopt::php artisan optimize
 
-:*:artoptc::
-{
-    SendText "php artisan optimize:clear"
-    Send "{Enter}"
-}
+::artoptc::php artisan optimize:clear
 
-:*:artpail::
-{
-    SendText "php artisan pail"
-    Send "{Enter}"
-}
+::artpail::php artisan pail
 
-:*:artinspire::
-{
-    SendText "php artisan inspire"
-    Send "{Enter}"
-}
+::artinspire::php artisan inspire
 
-:*:artlist::
-{
-    SendText "php artisan list"
-    Send "{Enter}"
-}
+::artlist::php artisan list
 
-:*:arthelp::
-{
-    SendText "php artisan help "
-}
+::arthelp::php artisan help 
 
-:*:artdown::
-{
-    SendText "php artisan down"
-    Send "{Enter}"
-}
+::artdown::php artisan down
 
-:*:artup::
-{
-    SendText "php artisan up"
-    Send "{Enter}"
-}
+::artup::php artisan up
 
-:*:artenv::
-{
-    SendText "php artisan env"
-    Send "{Enter}"
-}
+::artenv::php artisan env
 
 ; DB
-:*:artdbm::
-{
-    SendText "php artisan db:monitor"
-    Send "{Enter}"
-}
+::artdbm::php artisan db:monitor
 
-:*:artdbshow::
-{
-    SendText "php artisan db:show"
-    Send "{Enter}"
-}
+::artdbshow::php artisan db:show
 
-:*:artdbtable::
-{
-    SendText "php artisan db:table "
-}
+::artdbtable::php artisan db:table 
 
-:*:artdbwipe::
-{
-    SendText "php artisan db:wipe"
-    Send "{Enter}"
-}
+::artdbwipe::php artisan db:wipe
 
 ; Cache
-:*:artcf::
-{
-    SendText "php artisan cache:forget "
-}
+::artcf::php artisan cache:forget 
 
-:*:artcp::
-{
-    SendText "php artisan cache:prune-stale-tags"
-    Send "{Enter}"
-}
+::artcp::php artisan cache:prune-stale-tags
 
 ; Config
-:*:artconp::
-{
-    SendText "php artisan config:publish"
-    Send "{Enter}"
-}
+::artconp::php artisan config:publish
 
-:*:artcons::
-{
-    SendText "php artisan config:show "
-}
+::artcons::php artisan config:show 
 
 ; Schema & Stubs
-:*:artsched::
-{
-    SendText "php artisan schedule:list"
-    Send "{Enter}"
-}
+::artsched::php artisan schedule:list
 
-:*:artsdump::
-{
-    SendText "php artisan schema:dump"
-    Send "{Enter}"
-}
+::artsdump::php artisan schema:dump
 
-:*:artstub::
-{
-    SendText "php artisan stub:publish"
-    Send "{Enter}"
-}
+::artstub::php artisan stub:publish
 
 ; Vendor
-:*:artvp::
-{
-    SendText "php artisan vendor:publish"
-    Send "{Enter}"
-}
+::artvp::php artisan vendor:publish
 
-:*:artmm::
-{
-    SendText "php artisan make:model "
-}
+::artmm::php artisan make:model 
 
-:*:artmc::
-{
-    SendText "php artisan make:controller "
-}
+::artmc::php artisan make:controller 
 
-:*:artmmc::
-{
-    SendText "php artisan make:migration "
-}
+::artmmc::php artisan make:migration 
 
-:*:artms::
-{
-    SendText "php artisan make:seeder "
-}
+::artms::php artisan make:seeder 
 
-:*:artmfactory::
-{
-    SendText "php artisan make:factory "
-}
+::artmfactory::php artisan make:factory 
 
-:*:artmr::
-{
-    SendText "php artisan make:request "
-}
+::artmr::php artisan make:request 
 
-:*:artmp::
-{
-    SendText "php artisan make:policy "
-}
+::artmp::php artisan make:policy 
 
-:*:artmmiddleware::
-{
-    SendText "php artisan make:middleware "
-}
+::artmmiddleware::php artisan make:middleware 
 
-:*:artmcmd::
-{
-    SendText "php artisan make:command "
-}
+::artmcmd::php artisan make:command 
 
-:*:artmmail::
-{
-    SendText "php artisan make:mail "
-}
+::artmmail::php artisan make:mail 
 
-:*:artmnotification::
-{
-    SendText "php artisan make:notification "
-}
+::artmnotification::php artisan make:notification 
 
-:*:artmenum::
-{
-    SendText "php artisan make:enum "
-}
+::artmenum::php artisan make:enum 
 
-:*:artmclass::
-{
-    SendText "php artisan make:class "
-}
+::artmclass::php artisan make:class 
 
-:*:artminterface::
-{
-    SendText "php artisan make:interface "
-}
+::artminterface::php artisan make:interface 
 
-:*:artmtrait::
-{
-    SendText "php artisan make:trait "
-}
+::artmtrait::php artisan make:trait 
 
-:*:artmview::
-{
-    SendText "php artisan make:view "
-}
+::artmview::php artisan make:view 
 
-:*:artmvolt::
-{
-    SendText "php artisan make:volt "
-}
+::artmvolt::php artisan make:volt 
 
-:*:artmrule::
-{
-    SendText "php artisan make:rule "
-}
+::artmrule::php artisan make:rule 
 
-:*:artmscope::
-{
-    SendText "php artisan make:scope "
-}
+::artmscope::php artisan make:scope 
 
-:*:artmexception::
-{
-    SendText "php artisan make:exception "
-}
+::artmexception::php artisan make:exception 
 
-:*:artmresource::
-{
-    SendText "php artisan make:resource "
-}
+::artmresource::php artisan make:resource 
 
-:*:artmjob::
-{
-    SendText "php artisan make:job "
-}
+::artmjob::php artisan make:job 
 
-:*:artmevent::
-{
-    SendText "php artisan make:event "
-}
+::artmevent::php artisan make:event 
 
-:*:artmlistener::
-{
-    SendText "php artisan make:listener "
-}
+::artmlistener::php artisan make:listener 
 
-:*:artmprovider::
-{
-    SendText "php artisan make:provider "
-}
+::artmprovider::php artisan make:provider 
 
-:*:artmtest::
-{
-    SendText "php artisan make:test "
-}
+::artmtest::php artisan make:test 
 
-:*:artmobs::
-{
-    SendText "php artisan make:observer "
-}
+::artmobs::php artisan make:observer 
 
-:*:artmcast::
-{
-    SendText "php artisan make:cast "
-}
+::artmcast::php artisan make:cast 
 
-:*:artmcomp::
-{
-    SendText "php artisan make:component "
-}
+::artmcomp::php artisan make:component 
+
+; --- Testing ---
+::artt::php artisan test
+
+::artg::php artisan test:git
+::arttestp::php artisan test --parallel
+
+::arttestf::php artisan test --filter 
+
+::arttestc::php artisan test --coverage
+
+::arttestd::php artisan dusk
+
+::artpest::php artisan pest
 
 ; --- Package Specific ---
 
 ; Horizon
-:*:arthz::
-{
-    SendText "php artisan horizon"
-    Send "{Enter}"
-}
+::arthz::php artisan horizon
 
-:*:arthzc::
-{
-    SendText "php artisan horizon:clear"
-    Send "{Enter}"
-}
+::arthzc::php artisan horizon:clear
 
-:*:arthzi::
-{
-    SendText "php artisan horizon:install"
-    Send "{Enter}"
-}
+::arthzi::php artisan horizon:install
 
-:*:arthzt::
-{
-    SendText "php artisan horizon:terminate"
-    Send "{Enter}"
-}
+::arthzt::php artisan horizon:terminate
 
-:*:arthzs::
-{
-    SendText "php artisan horizon:status"
-    Send "{Enter}"
-}
+::arthzs::php artisan horizon:status
 
 ; Livewire
-:*:artlw::
-{
-    SendText "php artisan livewire:make "
-}
+::artlw::php artisan livewire:make 
 
-:*:artlwc::
-{
-    SendText "php artisan livewire:config"
-    Send "{Enter}"
-}
+::artlwc::php artisan livewire:config
 
-:*:artlwp::
-{
-    SendText "php artisan livewire:publish"
-    Send "{Enter}"
-}
+::artlwp::php artisan livewire:publish
 
 ; Nova
-:*:artnvi::
-{
-    SendText "php artisan nova:install"
-    Send "{Enter}"
-}
+::artnvi::php artisan nova:install
 
-:*:artnvr::
-{
-    SendText "php artisan nova:resource "
-}
+::artnvr::php artisan nova:resource 
 
-:*:artnvuser::
-{
-    SendText "php artisan nova:user"
-    Send "{Enter}"
-}
+::artnvuser::php artisan nova:user
 
 ; Octane
-:*:artoct::
-{
-    SendText "php artisan octane:start"
-    Send "{Enter}"
-}
+::artoct::php artisan octane:start
 
-:*:artocts::
-{
-    SendText "php artisan octane:stop"
-    Send "{Enter}"
-}
+::artocts::php artisan octane:stop
 
-:*:artoctr::
-{
-    SendText "php artisan octane:reload"
-    Send "{Enter}"
-}
+::artoctr::php artisan octane:reload
 
 ; Pulse
-:*:artplsw::
-{
-    SendText "php artisan pulse:work"
-    Send "{Enter}"
-}
+::artplsw::php artisan pulse:work
 
-:*:artplsc::
-{
-    SendText "php artisan pulse:clear"
-    Send "{Enter}"
-}
+::artplsc::php artisan pulse:clear
 
 ; Telescope
-:*:arttelei::
-{
-    SendText "php artisan telescope:install"
-    Send "{Enter}"
-}
+::arttelei::php artisan telescope:install
 
-:*:arttelec::
-{
-    SendText "php artisan telescope:clear"
-    Send "{Enter}"
-}
+::arttelec::php artisan telescope:clear
 
 ; Reverb
-:*:artrevs::
-{
-    SendText "php artisan reverb:start"
-    Send "{Enter}"
-}
+::artrevs::php artisan reverb:start
 
 ; Sail
-:*:artsaili::
-{
-    SendText "php artisan sail:install"
-    Send "{Enter}"
-}
+::artsaili::php artisan sail:install
 
 ; Scout
-:*:artscouti::
-{
-    SendText "php artisan scout:import "
-}
+::artscouti::php artisan scout:import 
 
 ; Vapor
-:*:artvpw::
-{
-    SendText "php artisan vapor:work"
-    Send "{Enter}"
-}
+::artvpw::php artisan vapor:work
 
 ; Queue Extra
-:*:artqf::
-{
-    SendText "php artisan queue:failed"
-    Send "{Enter}"
-}
+::artqf::php artisan queue:failed
 
-:*:artqr::
-{
-    SendText "php artisan queue:restart"
-    Send "{Enter}"
-}
+::artqr::php artisan queue:restart
 
-:*:artqretry::
-{
-    SendText "php artisan queue:retry "
-}
+::artqretry::php artisan queue:retry 
 
 ; View Extra
-:*:artvc::
-{
-    SendText "php artisan view:clear"
-    Send "{Enter}"
-}
+::artvc::php artisan view:clear
 
 ; Inertia
-:*:artinerm::
-{
-    SendText "php artisan inertia:middleware"
-    Send "{Enter}"
-}
+::artinerm::php artisan inertia:middleware
 
-:*:artiners::
-{
-    SendText "php artisan inertia:start-ssr"
-    Send "{Enter}"
-}
+::artiners::php artisan inertia:start-ssr
 
 ; Installers
-:*:artbrz::
-{
-    SendText "php artisan breeze:install"
-    Send "{Enter}"
-}
+::artbrz::php artisan breeze:install
 
-:*:artjets::
-{
-    SendText "php artisan jetstream:install"
-    Send "{Enter}"
-}
+::artjets::php artisan jetstream:install
 
-:*:artfort::
-{
-    SendText "php artisan fortify:install"
-    Send "{Enter}"
-}
+::artfort::php artisan fortify:install
 
-:*:artapi::
-{
-    SendText "php artisan install:api"
-    Send "{Enter}"
-}
+::artapi::php artisan install:api
 
 ; ; Commands that need arguments - cursor stays at end
-; :*:art::
+; ::art::
 ; {
 ;     SendText "php artisan "
 ; }

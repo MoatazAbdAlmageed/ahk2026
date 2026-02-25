@@ -3,65 +3,25 @@
 ; ===============================
 
 ; Basic commands - auto-execute
-:*:npmi::
-{
-    SendText "npm install"
-    Send "{Enter}"
-}
+::npmi::npm install
 
-:*:npms::
-{
-    SendText "npm start"
-    Send "{Enter}"
-}
+::npms::npm start
 
-:*:npmd::
-{
-    SendText "npm run dev"
-    Send "{Enter}"
-}
+::npmd::npm run dev
 
-:*:npmb::
-{
-    SendText "npm run build"
-    Send "{Enter}"
-}
+::npmb::npm run build
 
-:*:npmt::
-{
-    SendText "npm test"
-    Send "{Enter}"
-}
+::npmt::npm test
 
-:*:npminit::
-{
-    SendText "npm init -y"
-    Send "{Enter}"
-}
+::npminit::npm init -y
 
-:*:npmlg::
-{
-    SendText "npm list -g --depth=0"
-    Send "{Enter}"
-}
+::npmlg::npm list -g --depth=0
 
 ; Commands that need arguments - cursor stays at end
-:*:npma::
-{
-    SendText "npm install "
-}
+::npma::npm install 
 
-:*:npmad::
-{
-    SendText "npm install -D "
-}
+::npmad::npm install -D 
 
-:*:npmrm::
-{
-    SendText "npm uninstall "
-}
+::npmrm::npm uninstall 
 
-:*:npmr::
-{
-    SendText "npm run "
-}
+::npmr::npm run 

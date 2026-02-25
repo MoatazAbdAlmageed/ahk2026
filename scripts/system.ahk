@@ -2,25 +2,10 @@
 ; Windows System & CMD Shortcuts
 ; ===============================
 
-:*:sysip::
-{
-    SendText "ipconfig"
-    Send "{Enter}"
-}
+::sysip::ipconfig
 
-:*:sysping::
-{
-    SendText "ping 8.8.8.8"
-    Send "{Enter}"
-}
+::sysping::ping 8.8.8.8
 
-:*:sysrd::
-{
-    SendText "rmdir /s /q "
-}
+::sysrd::rmdir /s /q 
 
-:*:syspath::
-{
-    SendText "echo %PATH%"
-    Send "{Enter}"
-}
+::syspath::echo %PATH%

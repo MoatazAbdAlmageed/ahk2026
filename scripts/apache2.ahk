@@ -3,69 +3,26 @@
 ; ===============================
 
 ; Basic commands - auto-execute
-:*:apstart::
-{
-    SendText "sudo systemctl start apache2"
-    Send "{Enter}"
-}
+::apstart::sudo systemctl start apache2
 
-:*:apstop::
-{
-    SendText "sudo systemctl stop apache2"
-    Send "{Enter}"
-}
+::apstop::sudo systemctl stop apache2
 
-:*:aprest::
-{
-    SendText "sudo systemctl restart apache2"
-    Send "{Enter}"
-}
+::aprest::sudo systemctl restart apache2
 
-:*:apstat::
-{
-    SendText "sudo systemctl status apache2"
-    Send "{Enter}"
-}
+::apstat::sudo systemctl status apache2
 
-:*:aptest::
-{
-    SendText "sudo apachectl configtest"
-    Send "{Enter}"
-}
+::aptest::sudo apachectl configtest
 
-:*:apv::
-{
-    SendText "apache2 -v"
-    Send "{Enter}"
-}
+::apv::apache2 -v
 
 ; Commands that need arguments - cursor stays at end
-:*:aplog::
-{
-    SendText "sudo tail -f /var/log/apache2/access.log"
-    Send "{Enter}"
-}
+::aplog::sudo tail -f /var/log/apache2/access.log
 
-:*:aperr::
-{
-    SendText "sudo tail -f /var/log/apache2/error.log"
-    Send "{Enter}"
-}
+::aperr::sudo tail -f /var/log/apache2/error.log
 
-:*:apedit::
-{
-    SendText "sudo nano /etc/apache2/sites-available/"
-}
+::apedit::sudo nano /etc/apache2/sites-available/
 
 ; XAMPP Specific (Common for Windows users)
-:*:xamppstart::
-{
-    SendText "C:\xampp\xampp_start.exe"
-    Send "{Enter}"
-}
+::xamppstart::C:\xampp\xampp_start.exe
 
-:*:xamppstop::
-{
-    SendText "C:\xampp\xampp_stop.exe"
-    Send "{Enter}"
-}
+::xamppstop::C:\xampp\xampp_stop.exe

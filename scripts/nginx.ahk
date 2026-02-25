@@ -3,56 +3,21 @@
 ; ===============================
 
 ; Basic commands - auto-execute
-:*:ngstart::
-{
-    SendText "sudo systemctl start nginx"
-    Send "{Enter}"
-}
+::ngstart::sudo systemctl start nginx
 
-:*:ngstop::
-{
-    SendText "sudo systemctl stop nginx"
-    Send "{Enter}"
-}
+::ngstop::sudo systemctl stop nginx
 
-:*:ngrest::
-{
-    SendText "sudo systemctl restart nginx"
-    Send "{Enter}"
-}
+::ngrest::sudo systemctl restart nginx
 
-:*:ngstat::
-{
-    SendText "sudo systemctl status nginx"
-    Send "{Enter}"
-}
+::ngstat::sudo systemctl status nginx
 
-:*:ngtest::
-{
-    SendText "sudo nginx -t"
-    Send "{Enter}"
-}
+::ngtest::sudo nginx -t
 
-:*:ngv::
-{
-    SendText "nginx -v"
-    Send "{Enter}"
-}
+::ngv::nginx -v
 
 ; Commands that need arguments - cursor stays at end
-:*:nglog::
-{
-    SendText "sudo tail -f /var/log/nginx/access.log"
-    Send "{Enter}"
-}
+::nglog::sudo tail -f /var/log/nginx/access.log
 
-:*:ngerr::
-{
-    SendText "sudo tail -f /var/log/nginx/error.log"
-    Send "{Enter}"
-}
+::ngerr::sudo tail -f /var/log/nginx/error.log
 
-:*:ngedit::
-{
-    SendText "sudo nano /etc/nginx/sites-available/"
-}
+::ngedit::sudo nano /etc/nginx/sites-available/

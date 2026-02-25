@@ -2,31 +2,12 @@
 ; SQL / MySQL / PostgreSQL Shortcuts
 ; ===============================
 
-:*:sqlm::
-{
-    SendText "mysql -u root -p"
-    Send "{Enter}"
-}
+::sqlm::mysql -u root -p
 
-:*:sqlp::
-{
-    SendText "psql -U postgres"
-    Send "{Enter}"
-}
+::sqlp::psql -U postgres
 
-:*:sqld::
-{
-    SendText "mysqldump -u root -p "
-}
+::sqld::mysqldump -u root -p 
 
-:*:sqlshow::
-{
-    SendText "SHOW DATABASES;"
-    Send "{Enter}"
-}
+::sqlshow::SHOW DATABASES;
 
-:*:sqlt::
-{
-    SendText "SHOW TABLES;"
-    Send "{Enter}"
-}
+::sqlt::SHOW TABLES;

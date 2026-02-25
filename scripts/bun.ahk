@@ -2,46 +2,18 @@
 ; Bun Runtime Shortcuts
 ; ===============================
 
-:*:buni::
-{
-    SendText "bun install"
-    Send "{Enter}"
-}
+::buni::bun install
 
-:*:buna::
-{
-    SendText "bun add "
-}
+::buna::bun add 
 
-:*:bunad::
-{
-    SendText "bun add -d "
-}
+::bunad::bun add -d 
 
-:*:bund::
-{
-    SendText "bun dev"
-    Send "{Enter}"
-}
+::bund::bun dev
 
-:*:buns::
-{
-    SendText "bun start"
-    Send "{Enter}"
-}
+::buns::bun start
 
-:*:bunt::
-{
-    SendText "bun test"
-    Send "{Enter}"
-}
+::bunt::bun test
 
-:*:bunr::
-{
-    SendText "bun run "
-}
+::bunr::bun run 
 
-:*:bunx::
-{
-    SendText "bunx "
-}
+::bunx::bunx 

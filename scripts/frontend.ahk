@@ -3,46 +3,18 @@
 ; ===============================
 
 ; Vite
-:*:vited::
-{
-    SendText "npm run dev"
-    Send "{Enter}"
-}
+::vited::npm run dev
 
-:*:vitebuild::
-{
-    SendText "npm run build"
-    Send "{Enter}"
-}
+::vitebuild::npm run build
 
-:*:viteprev::
-{
-    SendText "npm run preview"
-    Send "{Enter}"
-}
+::viteprev::npm run preview
 
 ; Tailwind
-:*:twinit::
-{
-    SendText "npx tailwindcss init -p"
-    Send "{Enter}"
-}
+::twinit::npx tailwindcss init -p
 
 ; Next.js
-:*:nextd::
-{
-    SendText "npx next dev"
-    Send "{Enter}"
-}
+::nextd::npx next dev
 
-:*:nextbuild::
-{
-    SendText "npx next build"
-    Send "{Enter}"
-}
+::nextbuild::npx next build
 
-:*:nexts::
-{
-    SendText "npx next start"
-    Send "{Enter}"
-}
+::nexts::npx next start

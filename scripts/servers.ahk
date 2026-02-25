@@ -3,40 +3,16 @@
 ; ===============================
 
 ; PHP Built-in Server
-:*:servphps::
-{
-    SendText "php -S localhost:8000"
-    Send "{Enter}"
-}
+::servphps::php -S localhost:8000
 
 ; XAMPP / Apache Shortcuts (Generic Windows commands)
-:*:servapstart::
-{
-    SendText "net start apache2.4"
-    Send "{Enter}"
-}
+::servapstart::net start apache2.4
 
-:*:servapstop::
-{
-    SendText "net stop apache2.4"
-    Send "{Enter}"
-}
+::servapstop::net stop apache2.4
 
-:*:servmystart::
-{
-    SendText "net start mysql"
-    Send "{Enter}"
-}
+::servmystart::net start mysql
 
-:*:servmystop::
-{
-    SendText "net stop mysql"
-    Send "{Enter}"
-}
+::servmystop::net stop mysql
 
 ; Generic CLI things
-:*:servcli::
-{
-    SendText "python -m http.server 8080"
-    Send "{Enter}"
-}
+::servcli::python -m http.server 8080

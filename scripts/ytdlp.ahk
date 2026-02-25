@@ -3,32 +3,17 @@
 ; ===============================
 
 ; Commands that need arguments - cursor stays at end
-; :*:/yt::
+; ::/yt::
 ; {
 ;     SendText "yt-dlp "
 ; }
 
-:*:ytmp3::
-{
-    SendText "yt-dlp -x --audio-format mp3 "
-}
+::ytmp3::yt-dlp -x --audio-format mp3 
 
-:*:ytv::
-{
-    SendText 'yt-dlp -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best" '
-}
+::ytv::yt-dlp -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best" 
 
-:*:ytbest::
-{
-    SendText "yt-dlp -f best "
-}
+::ytbest::yt-dlp -f best 
 
-:*:ytplist::
-{
-    SendText "yt-dlp --yes-playlist "
-}
+::ytplist::yt-dlp --yes-playlist 
 
-:*:ytthumb::
-{
-    SendText "yt-dlp --write-thumbnail --skip-download "
-}
+::ytthumb::yt-dlp --write-thumbnail --skip-download 

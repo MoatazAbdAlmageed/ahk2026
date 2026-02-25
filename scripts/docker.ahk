@@ -3,71 +3,17 @@
 ; ===============================
 
 ; Basic commands - auto-execute
-:*:dkps::
-{
-    SendText "docker ps"
-    Send "{Enter}"
-}
-
-:*:dkpsa::
-{
-    SendText "docker ps -a"
-    Send "{Enter}"
-}
-
-:*:dki::
-{
-    SendText "docker images"
-    Send "{Enter}"
-}
-
-:*:dkup::
-{
-    SendText "docker-compose up -d"
-    Send "{Enter}"
-}
-
-:*:dkdown::
-{
-    SendText "docker-compose down"
-    Send "{Enter}"
-}
-
-:*:dkstop::
-{
-    SendText "docker stop $(docker ps -q)"
-    Send "{Enter}"
-}
+::dkps::docker ps
+::dkpsa::docker ps -a
+::dki::docker images
+::dkup::docker-compose up -d
+::dkdown::docker-compose down
+::dkstop::docker stop $(docker ps -q)
 
 ; Commands that need arguments - cursor stays at end
-:*:dkb::
-{
-    SendText "docker build -t "
-}
-
-:*:dkrun::
-{
-    SendText "docker run "
-}
-
-:*:dkex::
-{
-    SendText "docker exec -it "
-}
-
-:*:dkl::
-{
-    SendText "docker logs -f "
-}
-
-:*:dkv::
-{
-    SendText "docker volume ls"
-    Send "{Enter}"
-}
-
-:*:dkn::
-{
-    SendText "docker network ls"
-    Send "{Enter}"
-}
+::dkb::docker build -t
+::dkrun::docker run
+::dkex::docker exec -it
+::dkl::docker logs -f
+::dkv::docker volume ls
+::dkn::docker network ls

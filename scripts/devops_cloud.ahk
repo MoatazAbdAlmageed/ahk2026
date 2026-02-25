@@ -3,49 +3,20 @@
 ; ===============================
 
 ; Kubernetes (kubectl)
-:*:kubeg::
-{
-    SendText "kubectl get "
-}
+::kubeg::kubectl get 
 
-:*:kubed::
-{
-    SendText "kubectl describe "
-}
+::kubed::kubectl describe 
 
-:*:kubel::
-{
-    SendText "kubectl logs -f "
-}
+::kubel::kubectl logs -f 
 
 ; Terraform
-:*:tfi::
-{
-    SendText "terraform init"
-    Send "{Enter}"
-}
+::tfi::terraform init
 
-:*:tfp::
-{
-    SendText "terraform plan"
-    Send "{Enter}"
-}
+::tfp::terraform plan
 
-:*:tfa::
-{
-    SendText "terraform apply"
-    Send "{Enter}"
-}
+::tfa::terraform apply
 
 ; AWS
-:*:awsls::
-{
-    SendText "aws s3 ls"
-    Send "{Enter}"
-}
+::awsls::aws s3 ls
 
-:*:awsins::
-{
-    SendText "aws ec2 describe-instances"
-    Send "{Enter}"
-}
+::awsins::aws ec2 describe-instances

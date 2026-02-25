@@ -3,76 +3,29 @@
 ; ===============================
 
 ; Basic commands - auto-execute
-:*:railss::
-{
-    SendText "rails server"
-    Send "{Enter}"
-}
+::railss::rails server
 
-:*:railsc::
-{
-    SendText "rails console"
-    Send "{Enter}"
-}
+::railsc::rails console
 
-:*:railsdbm::
-{
-    SendText "rails db:migrate"
-    Send "{Enter}"
-}
+::railsdbm::rails db:migrate
 
-:*:railsdbr::
-{
-    SendText "rails db:rollback"
-    Send "{Enter}"
-}
+::railsdbr::rails db:rollback
 
-:*:railsdbs::
-{
-    SendText "rails db:seed"
-    Send "{Enter}"
-}
+::railsdbs::rails db:seed
 
-:*:railsr::
-{
-    SendText "rails routes"
-    Send "{Enter}"
-}
+::railsr::rails routes
 
-:*:/bi::
-{
-    SendText "bundle install"
-    Send "{Enter}"
-}
+::/bi::bundle install
 
-:*:/bu::
-{
-    SendText "bundle update"
-    Send "{Enter}"
-}
+::/bu::bundle update
 
 ; Commands that need arguments - cursor stays at end
-:*:railsgm::
-{
-    SendText "rails generate model "
-}
+::railsgm::rails generate model 
 
-:*:railsgc::
-{
-    SendText "rails generate controller "
-}
+::railsgc::rails generate controller 
 
-:*:railsgmig::
-{
-    SendText "rails generate migration "
-}
+::railsgmig::rails generate migration 
 
-:*:railsgscaf::
-{
-    SendText "rails generate scaffold "
-}
+::railsgscaf::rails generate scaffold 
 
-:*:railst::
-{
-    SendText "rails test "
-}
+::railst::rails test 

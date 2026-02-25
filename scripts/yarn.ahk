@@ -3,70 +3,26 @@
 ; ===============================
 
 ; Basic commands - auto-execute
-:*:yarni::
-{
-    SendText "yarn install"
-    Send "{Enter}"
-}
+::yarni::yarn install
 
-:*:yarna::
-{
-    SendText "yarn add "
-}
+::yarna::yarn add 
 
-:*:yarnad::
-{
-    SendText "yarn add -D "
-}
+::yarnad::yarn add -D 
 
-:*:yarnrm::
-{
-    SendText "yarn remove "
-}
+::yarnrm::yarn remove 
 
-:*:yarns::
-{
-    SendText "yarn start"
-    Send "{Enter}"
-}
+::yarns::yarn start
 
-:*:yarnd::
-{
-    SendText "yarn dev"
-    Send "{Enter}"
-}
+::yarnd::yarn dev
 
-:*:yarnb::
-{
-    SendText "yarn build"
-    Send "{Enter}"
-}
+::yarnb::yarn build
 
-:*:yarnt::
-{
-    SendText "yarn test"
-    Send "{Enter}"
-}
+::yarnt::yarn test
 
-:*:yarnl::
-{
-    SendText "yarn lint"
-    Send "{Enter}"
-}
+::yarnl::yarn lint
 
-:*:yarnui::
-{
-    SendText "yarn upgrade-interactive --latest"
-    Send "{Enter}"
-}
+::yarnui::yarn upgrade-interactive --latest
 
-:*:yarnga::
-{
-    SendText "yarn global add "
-}
+::yarnga::yarn global add 
 
-:*:yarnv::
-{
-    SendText "yarn -v"
-    Send "{Enter}"
-}
+::yarnv::yarn -v

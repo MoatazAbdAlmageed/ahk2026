@@ -2,50 +2,19 @@
 ; Flutter & Dart Command Shortcuts
 ; ===============================
 
-:*:flutrun::
-{
-    SendText "flutter run"
-    Send "{Enter}"
-}
+::flutrun::flutter run
 
-:*:flutbuild::
-{
-    SendText "flutter build apk"
-    Send "{Enter}"
-}
+::flutbuild::flutter build apk
 
-:*:flutget::
-{
-    SendText "flutter pub get"
-    Send "{Enter}"
-}
+::flutget::flutter pub get
 
-:*:flutclean::
-{
-    SendText "flutter clean"
-    Send "{Enter}"
-}
+::flutclean::flutter clean
 
-:*:flutdoc::
-{
-    SendText "flutter doctor"
-    Send "{Enter}"
-}
+::flutdoc::flutter doctor
 
-:*:flutup::
-{
-    SendText "flutter upgrade"
-    Send "{Enter}"
-}
+::flutup::flutter upgrade
 
 ; Dart
-:*:dartt::
-{
-    SendText "dart test"
-    Send "{Enter}"
-}
+::dartt::dart test
 
-:*:dartr::
-{
-    SendText "dart run "
-}
+::dartr::dart run 

@@ -3,46 +3,22 @@
 ; ===============================
 
 ; Basic commands - auto-execute
-:*:pyv::
-{
-    SendText "python --version"
-    Send "{Enter}"
-}
+::pyv::python --version
 
-:*:pyipr::
-{
-    SendText "pip install -r requirements.txt"
-    Send "{Enter}"
-}
+::pyipr::pip install -r requirements.txt
 
-:*:pyvenv::
-{
-    SendText "python -m venv venv"
-    Send "{Enter}"
-}
+::pyvenv::python -m venv venv
 
 ; ; Commands that need arguments
-; :*:pyy::
+; ::pyy::
 ; {
 ;     SendText "python "
 ; }
 
-:*:pyym::
-{
-    SendText "python -m "
-}
+::pyym::python -m 
 
-:*:pipi::
-{
-    SendText "pip install "
-}
+::pipi::pip install 
 
-:*:pipu::
-{
-    SendText "pip install --upgrade "
-}
+::pipu::pip install --upgrade 
 
-:*:pipun::
-{
-    SendText "pip uninstall "
-}
+::pipun::pip uninstall 

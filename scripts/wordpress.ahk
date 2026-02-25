@@ -3,56 +3,23 @@
 ; ===============================
 
 ; Basic commands - auto-execute
-:*:wpv::
-{
-    SendText "wp core version"
-    Send "{Enter}"
-}
+::wpv::wp core version
 
-:*:wpup::
-{
-    SendText "wp core update"
-    Send "{Enter}"
-}
+::wpup::wp core update
 
-:*:wps::
-{
-    SendText "wp server"
-    Send "{Enter}"
-}
+::wps::wp server
 
 ; Plugin management
-:*:wppl::
-{
-    SendText "wp plugin list"
-    Send "{Enter}"
-}
+::wppl::wp plugin list
 
-:*:wppi::
-{
-    SendText "wp plugin install "
-}
+::wppi::wp plugin install 
 
-:*:wppa::
-{
-    SendText "wp plugin activate "
-}
+::wppa::wp plugin activate 
 
 ; Theme management
-:*:wptl::
-{
-    SendText "wp theme list"
-    Send "{Enter}"
-}
+::wptl::wp theme list
 
 ; Database
-:*:wpdb::
-{
-    SendText "wp db export"
-    Send "{Enter}"
-}
+::wpdb::wp db export
 
-:*:wpsr::
-{
-    SendText "wp search-replace "
-}
+::wpsr::wp search-replace 

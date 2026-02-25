@@ -8,11 +8,14 @@
 
 ; Set working directory to script's location
 SetWorkingDir A_ScriptDir
+Persistent()
 
 ; =====================================================
 ; Dynamic Script Loader
 ; Automatically includes all .ahk files from the 'scripts' folder
 ; =====================================================
+
+FileAppend(A_Now " - UpdateIncludes triggered`n", "debug_log.txt")
 
 UpdateIncludes() {
     IncludeFile := "includes.ahk"
@@ -57,7 +60,7 @@ if !FileExist("includes.ahk")
 ; =====================================================
 
 ; Escape key to exit the script
-Esc:: ExitApp
+; Esc:: ExitApp
 
 ; Reload script with Ctrl+R
 ^r:: Reload

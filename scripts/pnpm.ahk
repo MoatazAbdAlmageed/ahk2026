@@ -3,42 +3,17 @@
 ; ===============================
 
 ; Basic commands - auto-execute
-:*:pnpmi::
-{
-    SendText "pnpm install"
-    Send "{Enter}"
-}
+::pnpmi::pnpm install
 
-:*:pnpms::
-{
-    SendText "pnpm start"
-    Send "{Enter}"
-}
+::pnpms::pnpm start
 
-:*:pnpmd::
-{
-    SendText "pnpm dev"
-    Send "{Enter}"
-}
+::pnpmd::pnpm dev
 
-:*:pnpmb::
-{
-    SendText "pnpm build"
-    Send "{Enter}"
-}
+::pnpmb::pnpm build
 
 ; Commands that need arguments - cursor stays at end
-:*:pnpma::
-{
-    SendText "pnpm add "
-}
+::pnpma::pnpm add 
 
-:*:pnpmad::
-{
-    SendText "pnpm add -D "
-}
+::pnpmad::pnpm add -D 
 
-:*:pnpmrm::
-{
-    SendText "pnpm remove "
-}
+::pnpmrm::pnpm remove 

@@ -3,23 +3,10 @@
 ; ===============================
 
 ; Basic commands - auto-execute
-:*:nodev::
-{
-    SendText "node -v"
-    Send "{Enter}"
-}
+::nodev::node -v
 
-:*:node::
-{
-    SendText "node "
-}
+::node::node 
 
-:*:nodew::
-{
-    SendText "node --watch "
-}
+::nodew::node --watch 
 
-:*:nodei::
-{
-    SendText "node --inspect "
-}
+::nodei::node --inspect 

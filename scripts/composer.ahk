@@ -1,96 +1,37 @@
-﻿; ===============================
+; ===============================
 ; composer Command Shortcuts
 ; ===============================
 
 ; Basic commands - auto-execute
-:*:compi::
-{
-    SendText "composer install"
-    Send "{Enter}"
-}
+::comi::composer  --ignore-platform-reqs install 
 
-:*:compu::
-{
-    SendText "composer update"
-    Send "{Enter}"
-}
+::comu::composer  --ignore-platform-reqs update
 
-:*:compd::
-{
-    SendText "composer dump-autoload"
-    Send "{Enter}"
-}
+::comd::composer  --ignore-platform-reqs dump-autoload
 
-:*:compv::
-{
-    SendText "composer -V"
-    Send "{Enter}"
-}
+::comv::composer  --ignore-platform-reqs -V
 
-:*:comps::
-{
-    SendText "composer show"
-    Send "{Enter}"
-}
+::coms::composer  --ignore-platform-reqs show
 
-:*:compsa::
-{
-    SendText "composer show -a"
-    Send "{Enter}"
-}
+::comsa::composer  --ignore-platform-reqs show -a
 
-:*:compsl::
-{
-    SendText "composer show -l"
-    Send "{Enter}"
-}
+::comsl::composer  --ignore-platform-reqs show -l
 
-:*:compt::
-{
-    SendText "composer test"
-    Send "{Enter}"
-}
+::comt::composer  --ignore-platform-reqs test
 
-:*:compch::
-{
-    SendText "composer check-platform-reqs"
-    Send "{Enter}"
-}
+::comch::composer  --ignore-platform-reqs check-platform-reqs
 
-:*:compdi::
-{
-    SendText "composer diagnose"
-    Send "{Enter}"
-}
+::comdi::composer  --ignore-platform-reqs diagnose
 
-:*:compsu::
-{
-    SendText "composer self-update"
-    Send "{Enter}"
-}
+::comsu::composer  --ignore-platform-reqs self-update
 
 ; Commands that need arguments - cursor stays at end
-:*:compr::
-{
-    SendText "composer require "
-}
+::comr::composer  --ignore-platform-reqs require  --ignore-platform-reqs
 
-:*:compru::
-{
-    SendText "composer remove "
-}
+::comx::composer  --ignore-platform-reqs remove 
 
-:*:compc::
-{
-    SendText "composer create-project "
-}
+::comc::composer  --ignore-platform-reqs create-project 
 
-:*:compwhy::
-{
-    SendText "composer why "
-}
+::comwhy::composer  --ignore-platform-reqs why 
 
-:*:compwhynot::
-{
-    SendText "composer why-not "
-}
+::comwhynot::composer  --ignore-platform-reqs why-not 

@@ -3,50 +3,19 @@
 ; ===============================
 
 ; Basic commands - auto-execute
-:*:expos::
-{
-    SendText "npx expo start"
-    Send "{Enter}"
-}
+::expos::npx expo start
 
-:*:expoa::
-{
-    SendText "npx expo start --android"
-    Send "{Enter}"
-}
+::expoa::npx expo start --android
 
-:*:expoi::
-{
-    SendText "npx expo start --ios"
-    Send "{Enter}"
-}
+::expoi::npx expo start --ios
 
-:*:expoc::
-{
-    SendText "npx expo start --clear"
-    Send "{Enter}"
-}
+::expoc::npx expo start --clear
 
 ; Management
-:*:expoin::
-{
-    SendText "npx expo install "
-}
+::expoin::npx expo install 
 
-:*:expop::
-{
-    SendText "npx expo prebuild"
-    Send "{Enter}"
-}
+::expop::npx expo prebuild
 
-:*:expologin::
-{
-    SendText "npx expo login"
-    Send "{Enter}"
-}
+::expologin::npx expo login
 
-:*:expowho::
-{
-    SendText "npx expo whoami"
-    Send "{Enter}"
-}
+::expowho::npx expo whoami

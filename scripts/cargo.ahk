@@ -2,42 +2,16 @@
 ; Rust & Cargo Command Shortcuts
 ; ===============================
 
-:*:cargorn::
-{
-    SendText "cargo run"
-    Send "{Enter}"
-}
+::cargorn::cargo run
 
-:*:cargob::
-{
-    SendText "cargo build"
-    Send "{Enter}"
-}
+::cargob::cargo build
 
-:*:cargot::
-{
-    SendText "cargo test"
-    Send "{Enter}"
-}
+::cargot::cargo test
 
-:*:cargoc::
-{
-    SendText "cargo check"
-    Send "{Enter}"
-}
+::cargoc::cargo check
 
-:*:cargoa::
-{
-    SendText "cargo add "
-}
+::cargoa::cargo add 
 
-:*:cargon::
-{
-    SendText "cargo new "
-}
+::cargon::cargo new 
 
-:*:cargof::
-{
-    SendText "cargo fmt"
-    Send "{Enter}"
-}
+::cargof::cargo fmt

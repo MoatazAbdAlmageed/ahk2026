@@ -3,41 +3,17 @@
 ; ===============================
 
 ; Newman is the CLI for Postman
-:*:newmanr::
-{
-    SendText "newman run "
-}
+::newmanr::newman run 
 
-:*:newmanre::
-{
-    SendText "newman run -e "
-}
+::newmanre::newman run -e 
 
-:*:newmanrg::
-{
-    SendText "newman run -g "
-}
+::newmanrg::newman run -g 
 
-:*:newmanri::
-{
-    SendText "newman run --iteration-count "
-}
+::newmanri::newman run --iteration-count 
 
-:*:newmanrh::
-{
-    SendText "newman run --reporters html"
-    Send "{Enter}"
-}
+::newmanrh::newman run --reporters html
 
 ; Login/Utility
-:*:pmlogin::
-{
-    SendText "postman login"
-    Send "{Enter}"
-}
+::pmlogin::postman login
 
-:*:pmv::
-{
-    SendText "postman --version"
-    Send "{Enter}"
-}
+::pmv::postman --version

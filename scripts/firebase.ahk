@@ -2,44 +2,16 @@
 ; Firebase CLI Shortcuts
 ; ===============================
 
-:*:fires::
-{
-    SendText "firebase serve"
-    Send "{Enter}"
-}
+::fires::firebase serve
 
-:*:fired::
-{
-    SendText "firebase deploy"
-    Send "{Enter}"
-}
+::fired::firebase deploy
 
-:*:firedh::
-{
-    SendText "firebase deploy --only hosting"
-    Send "{Enter}"
-}
+::firedh::firebase deploy --only hosting
 
-:*:firei::
-{
-    SendText "firebase init"
-    Send "{Enter}"
-}
+::firei::firebase init
 
-:*:firelogin::
-{
-    SendText "firebase login"
-    Send "{Enter}"
-}
+::firelogin::firebase login
 
-:*:fireo::
-{
-    SendText "firebase open"
-    Send "{Enter}"
-}
+::fireo::firebase open
 
-:*:fireproj::
-{
-    SendText "firebase projects:list"
-    Send "{Enter}"
-}
+::fireproj::firebase projects:list

@@ -71,6 +71,15 @@ Shortcuts start with `ai`.
 | `airedis` | Redis structure & command suggestions  |
 | `aicrud`  | Generate Laravel CRUD implementation   |
 
+### 🧪 Automated Tooling (`laravel_test_generator.ahk`, `sop_generator.ahk`)
+
+Powerful prompt generators that paste comprehensive templates.
+
+| Shortcut | Tool                 | Description                                      |
+| :------- | :------------------- | :----------------------------------------------- |
+| `protest`| Laravel Test Gen     | Pastes a detailed prompt for generating tests    |
+| `prosop` | SOP Template Gen     | Pastes a comprehensive, flexible SOP template    |
+
 ---
 
 ## ⚡ Setup & Usage
@@ -107,14 +116,14 @@ To create your own shortcut, use the AHK Hotstring syntax:
 
 ```autohotkey
 ; Auto-executing command
-:*:mycmd::
+::mycmd::
 {
     SendText "command to run"
     Send "{Enter}"
 }
 
 ; Command waiting for arguments
-:*:myarg::
+::myarg::
 {
     SendText "command "
 }

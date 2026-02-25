@@ -3,63 +3,25 @@
 ; ===============================
 
 ; Basic commands - auto-execute
-:*:pm2st::
-{
-    SendText "pm2 status"
-    Send "{Enter}"
-}
+::pm2st::pm2 status
 
-:*:pm2ls::
-{
-    SendText "pm2 list"
-    Send "{Enter}"
-}
+::pm2ls::pm2 list
 
-:*:pm2save::
-{
-    SendText "pm2 save"
-    Send "{Enter}"
-}
+::pm2save::pm2 save
 
-:*:pm2mon::
-{
-    SendText "pm2 monitor"
-    Send "{Enter}"
-}
+::pm2mon::pm2 monitor
 
-:*:pm2v::
-{
-    SendText "pm2 -v"
-    Send "{Enter}"
-}
+::pm2v::pm2 -v
 
 ; Commands that need arguments - cursor stays at end
-:*:pm2s::
-{
-    SendText "pm2 start "
-}
+::pm2s::pm2 start 
 
-:*:pm2res::
-{
-    SendText "pm2 restart "
-}
+::pm2res::pm2 restart 
 
-:*:pm2stop::
-{
-    SendText "pm2 stop "
-}
+::pm2stop::pm2 stop 
 
-:*:pm2del::
-{
-    SendText "pm2 delete "
-}
+::pm2del::pm2 delete 
 
-:*:pm2log::
-{
-    SendText "pm2 logs "
-}
+::pm2log::pm2 logs 
 
-:*:pm2info::
-{
-    SendText "pm2 info "
-}
+::pm2info::pm2 info 
