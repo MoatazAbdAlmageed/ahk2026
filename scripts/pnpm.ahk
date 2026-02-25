@@ -3,17 +3,17 @@
 ; ===============================
 
 ; Basic commands - auto-execute
-::pnpmi::pnpm install
+::pnmi::pnpm install
 
-::pnpms::pnpm start
+::pnms::pnpm start
 
-::pnpmd::pnpm dev
+::pnmd::pnpm dev
 
-::pnpmb::pnpm build
+::pnmb::pnpm build
 
 ; Commands that need arguments - cursor stays at end
-::pnpma::pnpm add 
+::pnma::pnpm add
 
-::pnpmad::pnpm add -D 
+::pnmad::pnpm add -D
 
-::pnpmrm::pnpm remove 
+::pnrm::pnpm remove
